@@ -4,13 +4,13 @@
 var str = prompt("Enter the Input","");
 if(isNaN(str))
 {
-str = str.toUpperCase();
+str1 = str.toUpperCase();
 for(var i = 0; i < str.length; i++) {
-var chr = str.charAt(i);
+var chr = str1.charAt(i);
 if(chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U')break;
 }
 if( i < str.length )
-alert("The position of the left most vowel is "+(i+1));
+alert("The position of the left most vowel in "+str+" is "+(i+1));
 else
 alert("No vowel found in the entered string");
 }
