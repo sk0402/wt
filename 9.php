@@ -1,8 +1,8 @@
 <?php
-Header(‘Content-Type:text/plain’);
-$allTheStates= “Mississippi Alabama Texas Massachusetts Kansas”;
+Header('Content-Type:text/plain');
+$allTheStates= "Mississippi Alabama Texas Massachusetts Kansas";
 $statesArray=[];
-$states1=explode(‘ ’,$allTheStates);
+$states1=explode(' ',$allTheStates);
 $i=0;
 //States that ends with XAS
 foreach ($states1 as $state) {
