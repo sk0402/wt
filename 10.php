@@ -1,3 +1,13 @@
+MySql -u root -p
+password : password
+show databases;
+create database sample10;
+use sample10;
+create table student(usn varchar(20),name varchar(20),address varchar(20));
+insert into student values('1AT16IS093','SANATH','BANGALORE');
+select * from student;
+
+
 <html>
  <body>
  <style>
