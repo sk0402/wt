@@ -2,7 +2,7 @@
 <html>
  <head>
  <title>JavaScript - Grow & Shrink Text</title>
-<script language = "JavaScript">
+ <script language = "JavaScript">
  var c = 0, t1;
  function start()
  {
@@ -12,28 +12,27 @@
  c = c + 1;
  t.innerHTML = "TEXT-GROWING : " + c + "pt";
  t.style.fontSize = c + "pt";
- window.status = c;
+ t.style.color = "red";
  if (c > 50) {
  window.clearTimeout(t1);
  alert("Font Size Reached 50pt. Text will Now Shrink");
  t1 = window.setInterval("decr()", 100);
  }
- t.style.color = "red";
  }
  function decr() {
  c = c - 1;
  t.innerHTML = "TEXT-SHRINKING: " + c + "pt";
  t.style.fontSize = c + "pt";
- window.status = c;
+ t.style.color = "blue";
  if (c == 5) {
  window.clearTimeout(t1);
  }
- t.style.color = "blue";
  }
  </script>
  </head>
- <body bgcolor="#ffdead" onload="start()">
+ <body background-color="white" onload="start()">
  <center>
  <p id="t"></p>
  </center>
-</body></html>
+</body>
+</html>
